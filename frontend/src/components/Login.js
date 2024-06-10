@@ -19,11 +19,11 @@ const Login = () => {
         <form onSubmit={onSubmit}>
             <div>
                 <label>Email:</label>
-                <input type="email" name="email" value={formData.email} onChange={onChange} required />
+                <input type="email" name="email" value={formData.email} onChange={onChange} required autoComplete='user-email' />
             </div>
             <div>
                 <label>Password:</label>
-                <input type="password" name="password" value={formData.password} onChange={onChange} required />
+                <input type="password" name="password" value={formData.password} onChange={onChange} required autoComplete='user-password' />
             </div>
             <button type="submit">Login</button>
         </form>

@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 export const fetchSuppliers = createAsyncThunk('suppliers/fetchSuppliers', async () => {
-    const res = await axios.get('/api/suppliers');
+    const res = await axios.get('http://localhost:5000/api/suppliers');
     return res.data;
 });
 

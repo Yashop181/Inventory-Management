@@ -41,7 +41,7 @@ exports.addProduct = async (req,res) =>{
         await product.save();
         res.status(201).json({ success: true, data: product });
     } catch (error) {
-        console.error(err.message);
+        console.error(error.message);
         res.status(500).send('Server Error');
     }
 };
